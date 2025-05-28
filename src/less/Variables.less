@@ -24,24 +24,25 @@
 
 /* COLOR SCHEME
 ================================================== */
-@color-background: 				#FFF;
-@color-foreground: 				#333;
-@color-dark: 					#000;
+@color-background: 			#FFF;
+@color-foreground: 			#333;
+@color-dark: 				#000;
 
-@color-theme:					#c34528; //#DA0000;
+@color-theme:				#FF2600; // Changed from #c34528
 
-@color-theme-dark:				darken(@color-theme, 15);
+@color-theme-dark:			darken(@color-theme, 15);
 
-@color-theme-complement:		spin(@color-theme, 180);
+// Custom era colors instead of using spin function
+@color-theme-complement:	#EF005F; // Changed from spin(@color-theme, 180)
 
-@color-theme-triad1:			spin(@color-theme, -135);
-@color-theme-triad2:			spin(@color-theme, 135);
+@color-theme-triad1:		#B82F8F; // Changed from spin(@color-theme, -135)
+@color-theme-triad2:		#704C9A; // Changed from spin(@color-theme, 135)
 
-@color-theme-split1:			spin(@color-theme, -158);
-@color-theme-split2:			spin(@color-theme, 158);
+@color-theme-split1:		#355181; // Fixed from #35518I (invalid hex)
+@color-theme-split2:		#2F4858; // Changed from spin(@color-theme, 158)
 
-@color-text: 					lighten(@color-foreground,25);
-@color-header-text: 			@color-dark;
+@color-text: 				lighten(@color-foreground,25);
+@color-header-text: 		@color-dark;
 
 @color-text-inverted:			darken(@color-background,5);
 @color-header-text-inverted:	@color-background;
